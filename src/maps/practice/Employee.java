@@ -55,7 +55,7 @@ public class Employee implements Comparable{
         }
         final Employee other = (Employee) obj;
 
-        if (!ssn.equals(other.ssn)) {
+        if (!(ssn.equals(other.ssn))) {
             return false;
         }
         return true;
@@ -75,9 +75,10 @@ public class Employee implements Comparable{
         Employee e=null;
         if(o instanceof Employee) 
             e=(Employee)o;
+        if(e.getSsn().equals(ssn))return EQUAL;
         if(empID<e.getEmpID())return AFTER;
-        else if(empID>e.getEmpID())return BEFORE;
-        return EQUAL;
+        return BEFORE;
+        
     }
     
     

@@ -14,7 +14,7 @@ public class MapsPractice {
         Employee e1=new Employee(245,"Dan","123-45-6789");
         Employee e2=new Employee(16,"Alex","987-65-4321");
         Employee e3=new Employee(123,"Tom","567-89-1234");
-        Employee e4=new Employee(0,"NULL","123-45-6789");
+        Employee e4=new Employee(321,"Bro","123-45-6789");
         
         Map<Integer,Employee> myHashMap=new HashMap<>();
         
@@ -48,11 +48,12 @@ public class MapsPractice {
         
         Set<Employee> myTreeSet=new TreeSet<>();
         
-        myTreeSet.add(e1);
+       
         myTreeSet.add(e4);
+        myTreeSet.add(e1);
         myTreeSet.add(e2);
         myTreeSet.add(e3);
-
+        
         List<Employee> employees=new ArrayList<>(myTreeSet);
         
         for(Employee e:employees){
