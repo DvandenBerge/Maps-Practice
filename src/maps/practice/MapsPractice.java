@@ -50,6 +50,8 @@ public class MapsPractice {
         
         Set<Employee> myTreeSet=new TreeSet<>();
         
+        //what is this I don't even
+        //remove duplicates pls
         myTreeSet.add(e2);
         myTreeSet.add(e3);
         myTreeSet.add(e4);
