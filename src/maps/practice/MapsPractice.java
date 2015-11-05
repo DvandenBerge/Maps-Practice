@@ -50,12 +50,13 @@ public class MapsPractice {
         
         Set<Employee> myTreeSet=new TreeSet<>();
         
-        //what is this I don't even
-        //remove duplicates pls
-        myTreeSet.add(e2);
-        myTreeSet.add(e3);
-        myTreeSet.add(e4);
+        //duplicate removal works when 4 and 1 are the first entries
+        //does not work if they are the last entries
+        //sos
         myTreeSet.add(e1);
+        myTreeSet.add(e2);
+        myTreeSet.add(e4);
+        myTreeSet.add(e3);
         
         List<Employee> employees=new ArrayList<>(myTreeSet);
         
