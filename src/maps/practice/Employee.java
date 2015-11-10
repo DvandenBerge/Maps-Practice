@@ -71,10 +71,7 @@ public class Employee implements Comparable{
         final int BEFORE=1;
         final int EQUAL=0;
         final int AFTER=-1;
-        
-        Employee e=null;
-        if(o instanceof Employee) 
-            e=(Employee)o;
+        Employee e=(Employee)o;
         if(e.getSsn().equals(ssn))return EQUAL;
         if(empID<e.getEmpID())return AFTER;
         return BEFORE;
