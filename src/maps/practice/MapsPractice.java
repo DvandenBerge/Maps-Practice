@@ -25,7 +25,8 @@ public class MapsPractice {
         myHashMap.put(e3.getEmpID(),e3);
         myHashMap.put(e4.getEmpID(),e4);
         
-        Set<Integer> myHashMapKeys=myHashMap.keySet();
+        Set<Integer> hashMapKeys=myHashMap.keySet();
+        List<Integer> myHashMapKeys=new ArrayList(hashMapKeys);
         
         for(Integer i:myHashMapKeys){
             System.out.println(myHashMap.get(i));
